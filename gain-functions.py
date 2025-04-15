@@ -2,7 +2,6 @@ from brian2 import *
 import matplotlib.pyplot as plt
 prefs.codegen.target = "numpy"
 import numpy as np
-from scipy.interpolate import UnivariateSpline
 
 # Setting simulation parameters
 n_neurons = 20

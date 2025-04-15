@@ -1,6 +1,6 @@
 # lif-qif-eif-gain-function
 
-This script uses Brian2 to simulate and plot the gain curve (f-I curve) of LIF, QIF, and EIF neurons at various stimulation current values, with electrophysiological parameters chosen to reflect values commonly found in the literature.
+This script uses Brian2 to simulate and plot the gain curve (f–I curve) of LIF, QIF, and EIF neuron models across a range of stimulation current values. The electrophysiological parameters were selected to reflect values commonly reported in the literature.
 
 Any feedback is greatly appreciated. Feel free to propose changes or get in touch.
 

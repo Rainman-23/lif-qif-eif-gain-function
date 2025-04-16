@@ -18,10 +18,10 @@ cd your-repository
 
 #### 2. Install the package with dependencies:
 
-Run the following command to automatically install the package and all required libraries (brian2, matplotlib, numpy, and scipy):
+Run the following command to automatically install the package and all required libraries (brian2, matplotlib, and numpy):
 
 ```bash
 pip install .
 ```
 
-After installation, you can start using the package in your Python scripts!
+After installation, you can start using the script!

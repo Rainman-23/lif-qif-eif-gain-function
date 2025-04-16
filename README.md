@@ -12,7 +12,7 @@ Here's a quick guide on how to install it:
 
 
 ```bash
-git clone https://github.com/your-username/your-repository.git
+git clone https://github.com/Rainman-23/lif-qif-eif-gain-function.git
 cd your-repository 
 ```
 

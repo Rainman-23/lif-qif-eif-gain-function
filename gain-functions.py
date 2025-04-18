@@ -49,7 +49,7 @@ net_LIF = Network(population_LIF, spikes_LIF, mon)
 # Run simulation for set duration
 net_LIF.run(duration)
 
-f_LIF = plt.figure(0)
+f_LIF = plt.figure("LIF f-i curve")
 plot(population_LIF.I_stim/(uA/cm2), spikes_LIF.count / duration)
 plt.xlabel('Input current density (µA/cm²)')
 plt.ylabel('Firing Rate (spikes/s)')
@@ -99,7 +99,7 @@ net_QIF = Network(population_QIF, spikes_QIF, mon_QIF)
 # Run simulation for set duration
 net_QIF.run(duration)
 
-f_QIF = plt.figure(1)
+f_QIF = plt.figure("QIF f-i curve")
 plot(population_QIF.I_stim/(uA/cm2), spikes_QIF.count / duration)
 plt.xlabel('Input current density [µA/cm²]')
 plt.ylabel('Firing Rate [spikes/s]')
@@ -149,7 +149,7 @@ net_EIF = Network(population_EIF, spikes_EIF, mon_EIF)
 
 net_EIF.run(duration)
 
-f_EIF = plt.figure(2)
+f_EIF = plt.figure("EIF f-i curve")
 plot(population_EIF.I_stim/(uA/cm2), spikes_EIF.count / duration)
 plt.xlabel('Input current density [µA/cm²]')
 plt.ylabel('Firing Rate [spikes/s]')
@@ -158,7 +158,7 @@ f_EIF.show()
 
 # Comparison
 
-f_comparison = plt.figure(3)
+f_comparison = plt.figure("LIF-QIF-EIF curve comparison")
 plt.plot(population_LIF.I_stim/(uA/cm2), spikes_LIF.count / duration)
 plt.plot(population_QIF.I_stim/(uA/cm2), spikes_QIF.count / duration)
 plt.plot(population_EIF.I_stim/(uA/cm2), spikes_EIF.count / duration)
@@ -201,7 +201,7 @@ I_vals_EIF_trimmed = I_vals_EIF[trim:-trim]
 
 # Plot the smoothed curves
 
-f_smoothed = plt.figure(4)
+f_smoothed = plt.figure("LIF-QIF-EIF smoothed curves")
 plt.plot(I_vals_LIF_trimmed, smoothed_fr_LIF, label='LIF (smoothed)')
 plt.plot(I_vals_QIF_trimmed, smoothed_fr_QIF, label='QIF (smoothed)')
 plt.plot(I_vals_EIF_trimmed, smoothed_fr_EIF, label='EIF (smoothed)')
